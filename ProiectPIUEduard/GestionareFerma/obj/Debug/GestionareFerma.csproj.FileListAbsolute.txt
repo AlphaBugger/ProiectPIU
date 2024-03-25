@@ -1,0 +1,12 @@
+C:\Users\x\source\repos\GestionareFerma\obj\Debug\GestionareFerma.csproj.AssemblyReference.cache
+C:\Users\x\source\repos\GestionareFerma\obj\Debug\GestionareFerma.csproj.CoreCompileInputs.cache
+C:\Users\x\source\repos\ProiectPIUEduard\GestionareFerma\obj\Debug\GestionareFerma.csproj.AssemblyReference.cache
+C:\Users\x\source\repos\ProiectPIUEduard\GestionareFerma\obj\Debug\GestionareFerma.csproj.CoreCompileInputs.cache
+C:\Users\x\source\repos\ProiectPIUEduard\GestionareFerma\bin\Debug\GestionareFerma.exe.config
+C:\Users\x\source\repos\ProiectPIUEduard\GestionareFerma\bin\Debug\GestionareFerma.exe
+C:\Users\x\source\repos\ProiectPIUEduard\GestionareFerma\bin\Debug\GestionareFerma.pdb
+C:\Users\x\source\repos\ProiectPIUEduard\GestionareFerma\bin\Debug\Clase.dll
+C:\Users\x\source\repos\ProiectPIUEduard\GestionareFerma\bin\Debug\Clase.pdb
+C:\Users\x\source\repos\ProiectPIUEduard\GestionareFerma\bin\Debug\Clase.dll.config
+C:\Users\x\source\repos\ProiectPIUEduard\GestionareFerma\obj\Debug\GestionareFerma.exe
+C:\Users\x\source\repos\ProiectPIUEduard\GestionareFerma\obj\Debug\GestionareFerma.pdb
