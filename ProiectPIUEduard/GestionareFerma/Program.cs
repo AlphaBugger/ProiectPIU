@@ -74,8 +74,23 @@ namespace GestionareFerma
         {
             Console.WriteLine("Adăugare animal:");
 
-            Console.Write("Tip: ");
-            string name = Console.ReadLine();
+            Console.WriteLine("Selectați tipul de animal de fermă:");
+            Console.WriteLine("1. Cow");
+            Console.WriteLine("2. Horse");
+            Console.WriteLine("3. Pig");
+            Console.WriteLine("4. Chicken");
+            Console.WriteLine("5. Sheep");
+            Console.WriteLine("6. Goat");
+            Console.Write("Opțiune: ");
+
+            int inputType;
+            if (!int.TryParse(Console.ReadLine(), out inputType) || inputType < 1 || inputType > 6)
+            {
+                Console.WriteLine("Opțiune invalidă. Animalul nu a fost adăugat.");
+                return;
+            }
+
+            Animal.FarmAnimalType type = (Animal.FarmAnimalType)(inputType - 1);
 
             Console.Write("Vârstă: ");
             int age;
@@ -93,38 +108,103 @@ namespace GestionareFerma
                 return;
             }
 
-            Console.Write("Rasă: ");
-            string breed = Console.ReadLine();
+            // Meniu pentru alegerea rasei în funcție de tipul de animal
+            string[] breedOptions;
+            switch (type)
+            {
+                case Animal.FarmAnimalType.Cow:
+                    Console.WriteLine("Selectați rasa pentru vacă:");
+                    breedOptions = Enum.GetNames(typeof(Animal.CowBreed));
+                    break;
+                case Animal.FarmAnimalType.Horse:
+                    Console.WriteLine("Selectați rasa pentru cal:");
+                    breedOptions = Enum.GetNames(typeof(Animal.HorseBreed));
+                    break;
+                default:
+                    Console.WriteLine("Introduceți rasa animalului:");
+                    breedOptions = new string[] { "Other" };
+                    break;
+            }
 
-            animals[animalCount] = new Animal(name, age, weight, breed);
+            // Afișați opțiunile de rasă din meniu
+            for (int i = 0; i < breedOptions.Length; i++)
+            {
+                Console.WriteLine($"{i + 1}. {breedOptions[i]}");
+            }
+
+            Console.Write("Opțiune: ");
+            int breedOption;
+            if (!int.TryParse(Console.ReadLine(), out breedOption) || breedOption < 1 || breedOption > breedOptions.Length)
+            {
+                Console.WriteLine("Opțiune invalidă. Animalul nu a fost adăugat.");
+                return;
+            }
+
+            // Obțineți rasa selectată din meniu
+            string selectedBreed = breedOptions[breedOption - 1];
+
+            animals[animalCount] = new Animal(type, age, weight, selectedBreed);
             animalCount++;
 
             Console.WriteLine("Animalul a fost adăugat cu succes.");
         }
 
+
+
+
         static void AddField()
         {
             Console.WriteLine("Adăugare câmp:");
 
-            Console.Write("Tip: ");
-            string type = Console.ReadLine();
+            Console.WriteLine("Selectați tipul de câmp:");
+            Console.WriteLine("1. Wheat");
+            Console.WriteLine("2. Corn");
+            Console.WriteLine("3. Barley");
+            Console.WriteLine("4. Soybean");
+            Console.WriteLine("5. Oat");
+            Console.Write("Opțiune: ");
+
+            int fieldTypeInput;
+            if (!int.TryParse(Console.ReadLine(), out fieldTypeInput) || fieldTypeInput < 1 || fieldTypeInput > 5)
+            {
+                Console.WriteLine("Opțiune invalidă. Câmpul nu a fost adăugat.");
+                return;
+            }
+
+            Field.FieldType type = (Field.FieldType)(fieldTypeInput - 1);
 
             Console.Write("Suprafață (hectare): ");
             double area;
-            if (!double.TryParse(Console.ReadLine(), out area))
+            if (!double.TryParse(Console.ReadLine(), out area) || area <= 0)
             {
                 Console.WriteLine("Suprafață invalidă. Câmpul nu a fost adăugat.");
                 return;
             }
 
-            Console.Write("Tip sol: ");
-            string soilType = Console.ReadLine();
+            Console.WriteLine("Selectați tipul de sol:");
+            Console.WriteLine("1. Clay");
+            Console.WriteLine("2. Sand");
+            Console.WriteLine("3. Loam");
+            Console.WriteLine("4. Silt");
+            Console.WriteLine("5. Peat");
+            Console.Write("Opțiune: ");
 
-            fields[fieldCount] = new Field(type, area, soilType);
+            int soilTypeInput;
+            if (!int.TryParse(Console.ReadLine(), out soilTypeInput) || soilTypeInput < 1 || soilTypeInput > 5)
+            {
+                Console.WriteLine("Opțiune invalidă. Câmpul nu a fost adăugat.");
+                return;
+            }
+
+            Field.SoilType soil = (Field.SoilType)(soilTypeInput - 1);
+
+            fields[fieldCount] = new Field(type, area, soil, Field.Actions.None);
             fieldCount++;
 
             Console.WriteLine("Câmpul a fost adăugat cu succes.");
         }
+
+
 
         static void DisplayAnimals()
         {
@@ -166,40 +246,23 @@ namespace GestionareFerma
         {
             Console.WriteLine("Căutare câmp după tip:");
 
-            Console.Write("Introduceți tipul de căutat: ");
-            string searchType = Console.ReadLine();
+            Console.WriteLine("Introduceți tipul de căutat (1 - Cow, 2 - Horse, 3 - Pig, 4 - Chicken, 5 - Sheep, 6 - Goat): ");
+            int searchType;
+            if (!int.TryParse(Console.ReadLine(), out searchType) || searchType < 1 || searchType > 6)
+            {
+                Console.WriteLine("Opțiune invalidă.");
+                return;
+            }
+
+            Animal.FarmAnimalType type = (Animal.FarmAnimalType)(searchType - 1);
 
             bool found = false;
             for (int i = 0; i < animalCount; i++)
             {
-                if (animals[i].Type.Equals(searchType, StringComparison.OrdinalIgnoreCase))
+                if (animals[i].Type == type)
                 {
                     Console.WriteLine($"Câmpul {i + 1}:");
                     animals[i].DisplayAnimalInfo();
-                    found = true;
-                    break;
-                }
-
-
-            }
-
-
-        }
-        static void SearchFieldByType()
-        {
-
-            Console.WriteLine("Căutare câmp după tip:");
-
-            Console.Write("Introduceți tipul de căutat: ");
-            string searchType = Console.ReadLine();
-
-            bool found = false;
-            for (int i = 0; i < fieldCount; i++)
-            {
-                if (fields[i].Type.Equals(searchType, StringComparison.OrdinalIgnoreCase))
-                {
-                    Console.WriteLine($"Câmpul {i + 1}:");
-                    fields[i].DisplayFieldInfo();
                     found = true;
                     break;
                 }
@@ -207,8 +270,39 @@ namespace GestionareFerma
 
             if (!found)
             {
-                Console.WriteLine("Nu s-a găsit niciun câmp cu tipul specificat.");
+                Console.WriteLine("Animalul nu a fost găsit.");
+            }
+        }
+
+        static void SearchFieldByType()
+        {
+            Console.WriteLine("Căutare câmp după tip:");
+
+            Console.WriteLine("Introduceți tipul de căutat (1 - Wheat, 2 - Corn, 3 - Barley, 4 - Soybean, 5 - Oat): ");
+            int searchType;
+            if (!int.TryParse(Console.ReadLine(), out searchType) || searchType < 1 || searchType > 5)
+            {
+                Console.WriteLine("Opțiune invalidă.");
+                return;
+            }
+
+            Field.FieldType type = (Field.FieldType)(searchType - 1);
+
+            bool found = false;
+            foreach (Field field in fields)
+            {
+                if (field.Type == type)
+                {
+                    field.DisplayFieldInfo();
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found)
+            {
+                Console.WriteLine("Câmpul nu a fost găsit.");
             }
         }
     }
-} 
+}

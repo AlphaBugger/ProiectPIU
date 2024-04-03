@@ -10,3 +10,4 @@ C:\Users\x\source\repos\ProiectPIUEduard\GestionareFerma\bin\Debug\Clase.pdb
 C:\Users\x\source\repos\ProiectPIUEduard\GestionareFerma\bin\Debug\Clase.dll.config
 C:\Users\x\source\repos\ProiectPIUEduard\GestionareFerma\obj\Debug\GestionareFerma.exe
 C:\Users\x\source\repos\ProiectPIUEduard\GestionareFerma\obj\Debug\GestionareFerma.pdb
+C:\Users\x\source\repos\ProiectPIUEduard\GestionareFerma\obj\Debug\GestionareFerma.csproj.CopyComplete

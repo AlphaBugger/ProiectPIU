@@ -12,76 +12,150 @@ namespace Clase
 {
     public class Animal
     {
-        public string Type { get; set; }
+        public enum FarmAnimalType
+        {
+            Cow,
+            Horse,
+            Pig,
+            Chicken,
+            Sheep,
+            Goat,
+            Other
+        }
+
+        public enum CowBreed
+        {
+            Holstein,
+            Jersey,
+            Angus,
+            Hereford,
+            Other
+        }
+
+        public enum HorseBreed
+        {
+            Thoroughbred,
+            QuarterHorse,
+            Arabian,
+            Appaloosa,
+            Other
+        }
+
+        public enum PigBreed
+        {
+            Berkshire,
+            Duroc,
+            Yorkshire,
+            Hampshire,
+            Other
+        }
+
+        // Definiți și celelalte rase pentru tipurile de animale lipsă (Chicken, Sheep, Goat, etc.)
+
+        public FarmAnimalType Type { get; set; }
         public int Age { get; set; }
         public double Weight { get; set; }
-        public string Breed { get; set; }
+
+        // Rasa va fi determinată în funcție de tipul animalului
+        public object Breed { get; set; }
 
         // Constructor
-        public Animal(string name, int age, double weight, string breed)
+        public Animal(FarmAnimalType type, int age, double weight, object breed)
         {
-            Type = name;
+            Type = type;
             Age = age;
             Weight = weight;
             Breed = breed;
-        }
 
-        // Metoda pentru a afișa informații despre animal
+        }
         public void DisplayAnimalInfo()
         {
-            Console.WriteLine($"Nume: {Type}");
+            Console.WriteLine($"Tip: {Type}");
             Console.WriteLine($"Vârstă: {Age} ani");
             Console.WriteLine($"Greutate: {Weight} kg");
             Console.WriteLine($"Rasă: {Breed}");
         }
-    }
 
+    }
     // Clasa Field
+
     public class Field
     {
-        public string Type { get; set; }
-        public double Area { get; set; }
-        public string SoilType { get; set; }
+        public enum FieldType
+        {
+            Wheat,
+            Corn,
+            Barley,
+            Soybean,
+            Oat
+        }
 
-        // Constructor
-        public Field(string type, double area, string soilType)
+        public enum SoilType
+        {
+            Clay,
+            Sand,
+            Loam,
+            Silt,
+            Peat
+        }
+
+        [Flags]
+        public enum Actions
+        {
+            None = 0,
+            Watering = 1 << 0,
+            PesticideApplication = 1 << 1,
+            Fertilization = 1 << 2,
+            Plowing = 1 << 3,
+            Harvesting = 1 << 4
+        }
+
+        public FieldType Type { get; set; }
+        public double Area { get; set; }
+        public SoilType Soil { get; set; }
+        public Actions FieldActions { get; set; }
+
+        public Field(FieldType type, double area, SoilType soil, Actions actions)
         {
             Type = type;
             Area = area;
-            SoilType = soilType;
+            Soil = soil;
+            FieldActions = actions;
         }
 
-        // Metoda pentru a afișa informații despre câmp
         public void DisplayFieldInfo()
         {
-            Console.WriteLine($"Tip: {Type}");
-            Console.WriteLine($"Suprafață: {Area} hectare");
-            Console.WriteLine($"Tip sol: {SoilType}");
+            Console.WriteLine($"Crop Type: {Type}");
+            Console.WriteLine($"Area: {Area} hectares");
+            Console.WriteLine($"Soil Type: {Soil}");
+            Console.WriteLine($"Actions: {FieldActions}");
         }
     }
+
+
 
     // Clasa Inventory
     public class Inventory
-    {
-        private Dictionary<string, int> items = new Dictionary<string, int>();
-
-        // Metodă pentru adăugarea unui element în inventar
-        public void AddItem(string itemName, int quantity)
         {
-            if (items.ContainsKey(itemName))
-                items[itemName] += quantity;
-            else
-                items[itemName] = quantity;
-        }
+            private Dictionary<string, int> items = new Dictionary<string, int>();
 
-        // Metodă pentru a afișa inventarul
-        public void DisplayInventory()
-        {
-            Console.WriteLine("Inventar:");
-            foreach (var item in items)
+            // Metodă pentru adăugarea unui element în inventar
+            public void AddItem(string itemName, int quantity)
             {
-                Console.WriteLine($"{item.Key}: {item.Value}");
+                if (items.ContainsKey(itemName))
+                    items[itemName] += quantity;
+                else
+                    items[itemName] = quantity;
+            }
+
+            // Metodă pentru a afișa inventarul
+            public void DisplayInventory()
+            {
+                Console.WriteLine("Inventar:");
+                foreach (var item in items)
+                {
+                    Console.WriteLine($"{item.Key}: {item.Value}");
+                }
             }
         }
     }
-}
