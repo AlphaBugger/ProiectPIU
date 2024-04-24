@@ -3,60 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{727268B5-958B-4251-93FF-E01BFAF764AC}|GestionareFerma\\GestionareFerma.csproj|c:\\users\\edi\\desktop\\proiectpiu\\proiectpiueduard\\gestionareferma\\gestionareferma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{727268B5-958B-4251-93FF-E01BFAF764AC}|GestionareFerma\\GestionareFerma.csproj|solutionrelative:gestionareferma\\gestionareferma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{181CDB60-D612-47E1-A629-7897B7EF4C40}|GestionareFermaGUI\\GestionareFermaGUI.csproj|c:\\users\\edi\\desktop\\proiectpiu\\proiectpiueduard\\gestionarefermagui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{181CDB60-D612-47E1-A629-7897B7EF4C40}|GestionareFermaGUI\\GestionareFermaGUI.csproj|C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\gestionarefermagui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{181CDB60-D612-47E1-A629-7897B7EF4C40}|GestionareFermaGUI\\GestionareFermaGUI.csproj|solutionrelative:gestionarefermagui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B6F1D493-7C5F-4254-8E9D-14863A837A03}|Field\\FieldClass.csproj|c:\\users\\edi\\desktop\\proiectpiu\\proiectpiueduard\\field\\field.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B6F1D493-7C5F-4254-8E9D-14863A837A03}|Field\\FieldClass.csproj|solutionrelative:field\\field.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CFD60E36-183C-4707-BA7C-67C95D641AA5}|Solution Items{CFD60E36-183C-4707-BA7C-67C95D641AA5}|C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\Data\\FieldData.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{CFD60E36-183C-4707-BA7C-67C95D641AA5}|Solution Items{CFD60E36-183C-4707-BA7C-67C95D641AA5}|solutionrelative:Data\\FieldData.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B6F1D493-7C5F-4254-8E9D-14863A837A03}|Field\\FieldClass.csproj|c:\\users\\edi\\desktop\\proiectpiu\\proiectpiueduard\\field\\enums\\fieldenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B6F1D493-7C5F-4254-8E9D-14863A837A03}|Field\\FieldClass.csproj|solutionrelative:field\\enums\\fieldenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6CA828F1-15F6-4CCB-8EBF-A485D8BFF9EC}|Animal\\AnimalClass.csproj|c:\\users\\edi\\desktop\\proiectpiu\\proiectpiueduard\\animal\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CA828F1-15F6-4CCB-8EBF-A485D8BFF9EC}|Animal\\AnimalClass.csproj|solutionrelative:animal\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6CA828F1-15F6-4CCB-8EBF-A485D8BFF9EC}|Animal\\AnimalClass.csproj|c:\\users\\edi\\desktop\\proiectpiu\\proiectpiueduard\\animal\\enums\\animalenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CA828F1-15F6-4CCB-8EBF-A485D8BFF9EC}|Animal\\AnimalClass.csproj|solutionrelative:animal\\enums\\animalenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1F0BC6D-227C-47C6-90AC-510581241FBC}|FileSaver\\FileSaver.csproj|c:\\users\\edi\\desktop\\proiectpiu\\proiectpiueduard\\filesaver\\filesaver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1F0BC6D-227C-47C6-90AC-510581241FBC}|FileSaver\\FileSaver.csproj|solutionrelative:filesaver\\filesaver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CFD60E36-183C-4707-BA7C-67C95D641AA5}|Solution Items{CFD60E36-183C-4707-BA7C-67C95D641AA5}|C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\Data\\AnimalData.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{CFD60E36-183C-4707-BA7C-67C95D641AA5}|Solution Items{CFD60E36-183C-4707-BA7C-67C95D641AA5}|solutionrelative:Data\\AnimalData.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{181CDB60-D612-47E1-A629-7897B7EF4C40}|GestionareFermaGUI\\GestionareFermaGUI.csproj|c:\\users\\edi\\desktop\\proiectpiu\\proiectpiueduard\\gestionarefermagui\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{181CDB60-D612-47E1-A629-7897B7EF4C40}|GestionareFermaGUI\\GestionareFermaGUI.csproj|solutionrelative:gestionarefermagui\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74416629-978B-49BE-A37F-A70C6E601521}|Interfaces\\Interfaces.csproj|c:\\users\\edi\\desktop\\proiectpiu\\proiectpiueduard\\interfaces\\interfaces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74416629-978B-49BE-A37F-A70C6E601521}|Interfaces\\Interfaces.csproj|solutionrelative:interfaces\\interfaces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{181CDB60-D612-47E1-A629-7897B7EF4C40}|GestionareFermaGUI\\GestionareFermaGUI.csproj|c:\\users\\edi\\desktop\\proiectpiu\\proiectpiueduard\\gestionarefermagui\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{181CDB60-D612-47E1-A629-7897B7EF4C40}|GestionareFermaGUI\\GestionareFermaGUI.csproj|solutionrelative:gestionarefermagui\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{727268B5-958B-4251-93FF-E01BFAF764AC}|GestionareFerma\\GestionareFerma.csproj|C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\gestionareferma\\gestionareferma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{727268B5-958B-4251-93FF-E01BFAF764AC}|GestionareFerma\\GestionareFerma.csproj|solutionrelative:gestionareferma\\gestionareferma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{727268B5-958B-4251-93FF-E01BFAF764AC}|GestionareFerma\\GestionareFerma.csproj|c:\\users\\edi\\desktop\\proiectpiu\\proiectpiueduard\\gestionareferma\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{727268B5-958B-4251-93FF-E01BFAF764AC}|GestionareFerma\\GestionareFerma.csproj|solutionrelative:gestionareferma\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{181CDB60-D612-47E1-A629-7897B7EF4C40}|GestionareFermaGUI\\GestionareFermaGUI.csproj|c:\\users\\edi\\desktop\\proiectpiu\\proiectpiueduard\\gestionarefermagui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B6F1D493-7C5F-4254-8E9D-14863A837A03}|Field\\FieldClass.csproj|C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\field\\field.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6F1D493-7C5F-4254-8E9D-14863A837A03}|Field\\FieldClass.csproj|solutionrelative:field\\field.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6F1D493-7C5F-4254-8E9D-14863A837A03}|Field\\FieldClass.csproj|C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\field\\enums\\fieldenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6F1D493-7C5F-4254-8E9D-14863A837A03}|Field\\FieldClass.csproj|solutionrelative:field\\enums\\fieldenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CA828F1-15F6-4CCB-8EBF-A485D8BFF9EC}|Animal\\AnimalClass.csproj|C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\animal\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CA828F1-15F6-4CCB-8EBF-A485D8BFF9EC}|Animal\\AnimalClass.csproj|solutionrelative:animal\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CA828F1-15F6-4CCB-8EBF-A485D8BFF9EC}|Animal\\AnimalClass.csproj|C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\animal\\enums\\animalenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CA828F1-15F6-4CCB-8EBF-A485D8BFF9EC}|Animal\\AnimalClass.csproj|solutionrelative:animal\\enums\\animalenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1F0BC6D-227C-47C6-90AC-510581241FBC}|FileSaver\\FileSaver.csproj|C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\filesaver\\filesaver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1F0BC6D-227C-47C6-90AC-510581241FBC}|FileSaver\\FileSaver.csproj|solutionrelative:filesaver\\filesaver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{181CDB60-D612-47E1-A629-7897B7EF4C40}|GestionareFermaGUI\\GestionareFermaGUI.csproj|C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\gestionarefermagui\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{181CDB60-D612-47E1-A629-7897B7EF4C40}|GestionareFermaGUI\\GestionareFermaGUI.csproj|solutionrelative:gestionarefermagui\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74416629-978B-49BE-A37F-A70C6E601521}|Interfaces\\Interfaces.csproj|C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\interfaces\\interfaces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74416629-978B-49BE-A37F-A70C6E601521}|Interfaces\\Interfaces.csproj|solutionrelative:interfaces\\interfaces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{181CDB60-D612-47E1-A629-7897B7EF4C40}|GestionareFermaGUI\\GestionareFermaGUI.csproj|C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\gestionarefermagui\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{181CDB60-D612-47E1-A629-7897B7EF4C40}|GestionareFermaGUI\\GestionareFermaGUI.csproj|solutionrelative:gestionarefermagui\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{181CDB60-D612-47E1-A629-7897B7EF4C40}|GestionareFermaGUI\\GestionareFermaGUI.csproj|C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\gestionarefermagui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{181CDB60-D612-47E1-A629-7897B7EF4C40}|GestionareFermaGUI\\GestionareFermaGUI.csproj|solutionrelative:gestionarefermagui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFD60E36-183C-4707-BA7C-67C95D641AA5}|Data{CFD60E36-183C-4707-BA7C-67C95D641AA5}|C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\Data\\FieldData.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{CFD60E36-183C-4707-BA7C-67C95D641AA5}|Data{CFD60E36-183C-4707-BA7C-67C95D641AA5}|solutionrelative:Data\\FieldData.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFD60E36-183C-4707-BA7C-67C95D641AA5}|Data{CFD60E36-183C-4707-BA7C-67C95D641AA5}|C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\Data\\AnimalData.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{CFD60E36-183C-4707-BA7C-67C95D641AA5}|Data{CFD60E36-183C-4707-BA7C-67C95D641AA5}|solutionrelative:Data\\AnimalData.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,37 +66,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 239,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GestionareFerma.cs",
-              "DocumentMoniker": "C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\GestionareFerma\\GestionareFerma.cs",
-              "RelativeDocumentMoniker": "GestionareFerma\\GestionareFerma.cs",
-              "ToolTip": "C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\GestionareFerma\\GestionareFerma.cs*",
-              "RelativeToolTip": "GestionareFerma\\GestionareFerma.cs*",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAuwEYAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T12:23:45.834Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FieldData.txt",
-              "DocumentMoniker": "C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\Data\\FieldData.txt",
-              "RelativeDocumentMoniker": "Data\\FieldData.txt",
-              "ToolTip": "C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\Data\\FieldData.txt",
-              "RelativeToolTip": "Data\\FieldData.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-04-23T21:12:52.335Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Field.cs",
               "DocumentMoniker": "C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\Field\\Field.cs",
               "RelativeDocumentMoniker": "Field\\Field.cs",
@@ -104,8 +78,7 @@
               "RelativeToolTip": "Field\\Field.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAQwCQAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T20:51:23.382Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-23T20:51:23.382Z"
             },
             {
               "$type": "Document",
@@ -117,8 +90,7 @@
               "RelativeToolTip": "FileSaver\\FileSaver.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAQwCwAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T21:26:01.395Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-23T21:26:01.395Z"
             },
             {
               "$type": "Document",
@@ -130,25 +102,50 @@
               "RelativeToolTip": "Animal\\Animal.cs",
               "ViewState": "AQIAACIAAAAAAAAAAAAcwD0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T20:51:13.317Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-23T20:51:13.317Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\GestionareFerma\\App.config",
               "RelativeDocumentMoniker": "GestionareFerma\\App.config",
               "ToolTip": "C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\GestionareFerma\\App.config",
               "RelativeToolTip": "GestionareFerma\\App.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAQAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
               "WhenOpened": "2024-04-23T21:13:21.04Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\GestionareFermaGUI\\Form1.cs",
+              "RelativeDocumentMoniker": "GestionareFermaGUI\\Form1.cs",
+              "ToolTip": "C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\GestionareFermaGUI\\Form1.cs",
+              "RelativeToolTip": "GestionareFermaGUI\\Form1.cs",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAawIAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T22:57:28.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GestionareFerma.cs",
+              "DocumentMoniker": "C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\GestionareFerma\\GestionareFerma.cs",
+              "RelativeDocumentMoniker": "GestionareFerma\\GestionareFerma.cs",
+              "ToolTip": "C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\GestionareFerma\\GestionareFerma.cs",
+              "RelativeToolTip": "GestionareFerma\\GestionareFerma.cs",
+              "ViewState": "AQIAAMYAAAAAAAAAAAAYwNkAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T12:23:45.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\GestionareFermaGUI\\App.config",
               "RelativeDocumentMoniker": "GestionareFermaGUI\\App.config",
@@ -156,12 +153,23 @@
               "RelativeToolTip": "GestionareFermaGUI\\App.config",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-04-23T23:16:31.954Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-23T23:16:31.954Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
+              "Title": "FieldData.txt",
+              "DocumentMoniker": "C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\Data\\FieldData.txt",
+              "RelativeDocumentMoniker": "Data\\FieldData.txt",
+              "ToolTip": "C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\Data\\FieldData.txt",
+              "RelativeToolTip": "Data\\FieldData.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-04-23T21:12:52.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\GestionareFermaGUI\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "GestionareFermaGUI\\Form1.Designer.cs",
@@ -174,29 +182,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\GestionareFermaGUI\\Form1.cs",
-              "RelativeDocumentMoniker": "GestionareFermaGUI\\Form1.cs",
-              "ToolTip": "C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\GestionareFermaGUI\\Form1.cs",
-              "RelativeToolTip": "GestionareFermaGUI\\Form1.cs",
-              "ViewState": "AQIAAE0AAAAAAAAAAAAwwG0AAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T22:57:28.981Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "AnimalData.txt",
               "DocumentMoniker": "C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\Data\\AnimalData.txt",
               "RelativeDocumentMoniker": "Data\\AnimalData.txt",
               "ToolTip": "C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\Data\\AnimalData.txt",
               "RelativeToolTip": "Data\\AnimalData.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-04-23T21:12:50.828Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-23T21:12:50.828Z"
             },
             {
               "$type": "Document",
@@ -208,8 +202,7 @@
               "RelativeToolTip": "Animal\\Enums\\AnimalEnums.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T20:52:43.465Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-23T20:52:43.465Z"
             },
             {
               "$type": "Document",
@@ -221,12 +214,11 @@
               "RelativeToolTip": "Field\\Enums\\FieldEnums.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T20:56:40.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-23T20:56:40.069Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "Interfaces.cs",
               "DocumentMoniker": "C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\Interfaces\\Interfaces.cs",
               "RelativeDocumentMoniker": "Interfaces\\Interfaces.cs",
@@ -234,12 +226,11 @@
               "RelativeToolTip": "Interfaces\\Interfaces.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T21:33:01.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-23T21:33:01.77Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\edi\\Desktop\\ProiectPIU\\ProiectPIUEduard\\GestionareFermaGUI\\Form1.cs",
               "RelativeDocumentMoniker": "GestionareFermaGUI\\Form1.cs",

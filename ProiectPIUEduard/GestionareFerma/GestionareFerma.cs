@@ -215,6 +215,7 @@ namespace GestionareFerma
             SoilType soil = (SoilType)(soilTypeInput - 1);
 
             Field field = new Field(type, area, soil, Actions.None);
+            fields.Add(field);
 
             Console.WriteLine("Câmpul a fost adăugat cu succes.");
             return field;

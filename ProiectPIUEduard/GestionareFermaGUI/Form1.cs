@@ -112,7 +112,7 @@ namespace GestionareFermaGUI
                 TextAlign = ContentAlignment.MiddleCenter,
                 Left = DIMENSIUNE_PAS_Y,
                 Top = InformatiiAnimal.Top + InformatiiAnimal.Height + PADDING,
-                BackColor = Color.Red
+                BackColor = Color.Gray
             };
 
             BreedAnimal = new Label()
@@ -261,7 +261,6 @@ namespace GestionareFermaGUI
                     TextAlign = ContentAlignment.MiddleCenter,
                     Left = lblsAgeAnimal[i].Left + lblsAgeAnimal[i].Width + PADDING,
                     Top = (TypeAnimal.Top + TypeAnimal.Height) + PADDING * (i + 1),
-                    BackColor = Color.Red
 
                 };
                 this.Controls.Add(lblsTypeAnimal[i]);
@@ -280,7 +279,6 @@ namespace GestionareFermaGUI
                     TextAlign = ContentAlignment.MiddleCenter,
                     Left = TypeField.Left,
                     Top = (TypeField.Top + TypeField.Height) + PADDING * (i + 1),
-                    BackColor = Color.Red
                 };
                 lblsAreaField[i] = new Label()
                 {
