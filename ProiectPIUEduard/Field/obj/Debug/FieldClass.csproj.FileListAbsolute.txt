@@ -1,0 +1,11 @@
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\Field\bin\Debug\Field.dll
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\Field\bin\Debug\Field.pdb
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\Field\obj\Debug\FieldClass.csproj.AssemblyReference.cache
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\Field\obj\Debug\FieldClass.csproj.CoreCompileInputs.cache
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\Field\obj\Debug\Field.dll
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\Field\obj\Debug\Field.pdb
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\Field\bin\Debug\FileSaver.dll
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\Field\bin\Debug\Interfaces.dll
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\Field\bin\Debug\FileSaver.pdb
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\Field\bin\Debug\Interfaces.pdb
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\Field\obj\Debug\FieldClass.csproj.Up2Date

@@ -1,0 +1,9 @@
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\FileSaver\obj\Debug\FileSaver.csproj.AssemblyReference.cache
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\FileSaver\obj\Debug\FileSaver.csproj.CoreCompileInputs.cache
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\FileSaver\bin\Debug\FileSaver.dll
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\FileSaver\bin\Debug\FileSaver.pdb
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\FileSaver\bin\Debug\Interfaces.dll
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\FileSaver\bin\Debug\Interfaces.pdb
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\FileSaver\obj\Debug\FileSaver.csproj.Up2Date
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\FileSaver\obj\Debug\FileSaver.dll
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\FileSaver\obj\Debug\FileSaver.pdb

@@ -1,0 +1,2 @@
+Wheat$Clay$12$None
+Corn$Loam$12$None

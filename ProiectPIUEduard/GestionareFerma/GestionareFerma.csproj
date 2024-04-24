@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -43,16 +44,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="GestionareFerma.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Clase\Clase.csproj">
-      <Project>{59891dd0-35e1-4a87-b41b-6c6cddbb4621}</Project>
-      <Name>Clase</Name>
+    <ProjectReference Include="..\Animal\AnimalClass.csproj">
+      <Project>{6ca828f1-15f6-4ccb-8ebf-a485d8bff9ec}</Project>
+      <Name>AnimalClass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Field\FieldClass.csproj">
+      <Project>{b6f1d493-7c5f-4254-8e9d-14863a837a03}</Project>
+      <Name>FieldClass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FileSaver\FileSaver.csproj">
+      <Project>{d1f0bc6d-227c-47c6-90ac-510581241fbc}</Project>
+      <Name>FileSaver</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+      <Project>{74416629-978B-49BE-A37F-A70C6E601521}</Project>
+      <Name>Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

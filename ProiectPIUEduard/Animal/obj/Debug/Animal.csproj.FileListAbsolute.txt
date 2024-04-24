@@ -1,0 +1,6 @@
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\Animal\bin\Debug\Animal.dll
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\Animal\bin\Debug\Animal.pdb
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\Animal\obj\Debug\Animal.csproj.AssemblyReference.cache
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\Animal\obj\Debug\Animal.csproj.CoreCompileInputs.cache
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\Animal\obj\Debug\Animal.dll
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\Animal\obj\Debug\Animal.pdb
