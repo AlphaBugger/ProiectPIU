@@ -13,6 +13,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
+using System.Windows.Forms.VisualStyles;
+using ContentAlignment = System.Drawing.ContentAlignment;
+using System.Text.RegularExpressions;
 
 namespace GestionareFermaGUI
 {
@@ -21,7 +24,10 @@ namespace GestionareFermaGUI
 
         DataFileManager dataManagerAnimal;
         DataFileManager dataManagerField;
-        
+
+        static List<Animal> animals = new List<Animal>();
+        static List<Field> fields = new List<Field>();
+
 
 
         //Animals
@@ -36,6 +42,22 @@ namespace GestionareFermaGUI
         private Label[] lblsWeightAnimal;
         private Label[] lblsBreedAnimal;
 
+        private Label inputTypeAnimal;
+        private Label inputAgeAnimal;
+        private Label inputWeightAnimal;
+        private Label inputBreedAnimal;
+
+        private Label errorInputTypeAnimal;
+        private Label errorInputAgeAnimal;
+        private Label errorInputWeightAnimal;
+        private Label errorInputBreedAnimal;
+
+        private ComboBox txtTypeAnimal;
+        private TextBox txtAgeAnimal;
+        private TextBox txtWeightAnimal;
+        private TextBox txtBreedAnimal;
+
+
         //Fields
         private Label InformatiiField;
         private Label TypeField;
@@ -46,19 +68,36 @@ namespace GestionareFermaGUI
         private Label[] lblsAreaField;
         private Label[] lblsSoilField;
 
+        private Label inputTypeField;
+        private Label inputAreaField;
+        private Label inputSoilField;
+
+        private Label errorInputTypeField;
+        private Label errorInputAreaField;
+        private Label errorInputSoilField;
+
+
+
+        private ComboBox txtTypeField;
+        private TextBox txtAreaField;
+        private ComboBox txtSoilField;
+
         //Buttons
-        private Button btnSubmit;
+        private Button btnSubmitAnimal;
+        private Button btnSubmitField;
 
         //Constants
         private const int LATIME_CONTROL = 100;
-        
+
         private const int DIMENSIUNE_PAS_X = 120;
-        
+
         private const int PADDING = 20;
         private const int LATIME_CONTROL_TITLE = (LATIME_CONTROL + PADDING) * 4 - PADDING;
-        private const int LATIME_CONTROL_3 = (LATIME_CONTROL_TITLE) / 3 - PADDING*2/3;
-        private const int WINDOW_TAB = 300; 
-        private const int DIMENSIUNE_PAS_Y = 30+WINDOW_TAB+PADDING;
+        private const int LATIME_CONTROL_3 = (LATIME_CONTROL_TITLE) / 3 - (PADDING * 2) / 3;
+        private const int WINDOW_TAB = 300;
+        private const int DIMENSIUNE_PAS_WINDOW2 = 30 + WINDOW_TAB + PADDING;
+        private const int DIMENSIUNE_PAS_WINDOW = 30;
+
 
 
 
@@ -66,7 +105,6 @@ namespace GestionareFermaGUI
 
         public Form1()
         {
-            Console.WriteLine(LATIME_CONTROL_TITLE.ToString());
             InitializeComponent();
             string numeFisierAnimal = ConfigurationManager.AppSettings["FileNameAnimal"];
             string numeFisierField = ConfigurationManager.AppSettings["FileNameField"];
@@ -85,7 +123,7 @@ namespace GestionareFermaGUI
             Animal[] animals = dataManagerAnimal.GetObjects<Animal>(out nrAnimals);
             Field[] fields = dataManagerField.GetObjects<Field>(out nrFields);
 
-            this.Size = new Size(LATIME_CONTROL_TITLE * 2 - PADDING+WINDOW_TAB, 400);
+            this.Size = new Size(LATIME_CONTROL_TITLE * 2 - PADDING + WINDOW_TAB, 400);
             this.StartPosition = FormStartPosition.Manual;
             this.Location = new Point(100, 100);
             this.Font = new Font("Arial", 9, FontStyle.Bold);
@@ -99,7 +137,7 @@ namespace GestionareFermaGUI
                 Width = LATIME_CONTROL_TITLE,
                 Text = "Informatii Animal",
                 TextAlign = ContentAlignment.MiddleCenter,
-                Left = DIMENSIUNE_PAS_Y,
+                Left = DIMENSIUNE_PAS_WINDOW2,
                 Top = PADDING,
                 BackColor = Color.Gray
             };
@@ -110,8 +148,8 @@ namespace GestionareFermaGUI
                 Width = LATIME_CONTROL,
                 Text = "Tip",
                 TextAlign = ContentAlignment.MiddleCenter,
-                Left = DIMENSIUNE_PAS_Y,
-                Top = InformatiiAnimal.Top + InformatiiAnimal.Height + PADDING,
+                Left = DIMENSIUNE_PAS_WINDOW2,
+                Top = InformatiiAnimal.Top + InformatiiAnimal.Height,
                 BackColor = Color.Gray
             };
 
@@ -121,7 +159,7 @@ namespace GestionareFermaGUI
                 Text = "Rasa",
                 TextAlign = ContentAlignment.MiddleCenter,
                 Left = TypeAnimal.Left + TypeAnimal.Width + PADDING,
-                Top = InformatiiAnimal.Top + InformatiiAnimal.Height + PADDING,
+                Top = InformatiiAnimal.Top + InformatiiAnimal.Height,
                 BackColor = Color.Gray
             };
 
@@ -131,7 +169,7 @@ namespace GestionareFermaGUI
                 Text = "Varsta",
                 TextAlign = ContentAlignment.MiddleCenter,
                 Left = BreedAnimal.Left + BreedAnimal.Width + PADDING,
-                Top = InformatiiAnimal.Top + InformatiiAnimal.Height + PADDING,
+                Top = InformatiiAnimal.Top + InformatiiAnimal.Height,
                 BackColor = Color.Gray
             };
 
@@ -141,18 +179,122 @@ namespace GestionareFermaGUI
                 Text = "Greutate",
                 TextAlign = ContentAlignment.MiddleCenter,
                 Left = AgeAnimal.Left + AgeAnimal.Width + PADDING,
-                Top = InformatiiAnimal.Top + InformatiiAnimal.Height + PADDING,
+                Top = InformatiiAnimal.Top + InformatiiAnimal.Height,
                 BackColor = Color.Gray
+            };
+
+            inputTypeAnimal = new Label()
+            {
+                Width = LATIME_CONTROL,
+                Text = "Tip Animal",
+                TextAlign = ContentAlignment.MiddleCenter,
+                Left = DIMENSIUNE_PAS_WINDOW,
+                Top = PADDING,
+            };
+
+            inputBreedAnimal = new Label()
+            {
+                Width = LATIME_CONTROL,
+                Text = "Rasa Animal",
+                TextAlign = ContentAlignment.MiddleCenter,
+                Left = DIMENSIUNE_PAS_WINDOW,
+                Top = inputTypeAnimal.Top + inputTypeAnimal.Height + PADDING,
+            };
+
+            inputAgeAnimal = new Label()
+            {
+                Width = LATIME_CONTROL,
+                Text = "Varsta Animal",
+                TextAlign = ContentAlignment.MiddleCenter,
+                Left = DIMENSIUNE_PAS_WINDOW,
+                Top = inputBreedAnimal.Top + PADDING + inputTypeAnimal.Height,
+            };
+
+            inputWeightAnimal = new Label()
+            {
+                Width = LATIME_CONTROL,
+                Text = "Greutate Animal",
+                TextAlign = ContentAlignment.MiddleCenter,
+                Left = DIMENSIUNE_PAS_WINDOW,
+                Top = inputAgeAnimal.Top + PADDING + inputTypeAnimal.Height,
             };
 
 
 
+            txtTypeAnimal = new ComboBox() {
+                Width = LATIME_CONTROL,
+                Left = inputTypeAnimal.Left + inputTypeAnimal.Width + PADDING,
+                Top = inputTypeAnimal.Top
+            };
+            txtTypeAnimal.Items.Add("Alegeti...");
+            foreach (Enum value in Enum.GetValues(typeof(FarmAnimalType)))
+            {
+                txtTypeAnimal.Items.Add(value);
+            }
+            txtTypeAnimal.SelectedIndex = 0;
+
+            //txtBreedAnimal = new ComboBox()
+            //{
+            //    Width = LATIME_CONTROL,
+            //    Left = inputBreedAnimal.Left + inputBreedAnimal.Width + PADDING,
+            //    Top = inputBreedAnimal.Top
+            //};
+            //txtBreedAnimal.Items.Add("Alegeti...");
+            //this.Refresh();
+            //Console.WriteLine(txtTypeAnimal.Text);
+            //switch (txtTypeAnimal.Text)
+            //{
+            //    case "Cow":
+            //        foreach (Enum value in Enum.GetValues(typeof(CowBreed)))
+            //        {
+            //            txtBreedAnimal.Items.Add(value);
+            //        }
+            //        break;
+            //    case "Horse":
+            //        foreach (Enum value in Enum.GetValues(typeof(HorseBreed)))
+            //        {
+            //            txtBreedAnimal.Items.Add(value);
+            //        }
+            //        break;
+            //    case "Pig":
+            //        foreach (Enum value in Enum.GetValues(typeof(PigBreed)))
+            //        {
+            //            txtBreedAnimal.Items.Add(value);
+            //        }
+            //        break;
+            //    default:
+            //        txtBreedAnimal.Items.Add("Other");
+            //        break;
+            //}
+
+
+
+            //txtBreedAnimal.SelectedIndex = 0;
+            txtBreedAnimal = new TextBox()
+            {
+                Width = LATIME_CONTROL,
+                Left = inputBreedAnimal.Left + inputBreedAnimal.Width + PADDING,
+                Top = inputBreedAnimal.Top
+            };
+
+            txtAgeAnimal = new TextBox()
+            {
+                Width = LATIME_CONTROL,
+                Left = inputAgeAnimal.Left + inputAgeAnimal.Width + PADDING,
+                Top = inputAgeAnimal.Top
+            };
+            txtWeightAnimal = new TextBox()
+            {
+                Width = LATIME_CONTROL,
+                Left = inputWeightAnimal.Left + inputWeightAnimal.Width + PADDING,
+                Top = inputWeightAnimal.Top
+            };
 
 
             //Field Labels
             InformatiiField = new Label()
             {
-                Width = LATIME_CONTROL_TITLE,
+                Width = LATIME_CONTROL_3 * 3 + PADDING * 2,
                 Text = "Informatii Field",
                 TextAlign = ContentAlignment.MiddleCenter,
                 Left = InformatiiAnimal.Left + InformatiiAnimal.Width + PADDING,
@@ -164,32 +306,181 @@ namespace GestionareFermaGUI
             TypeField = new Label()
             {
                 Width = LATIME_CONTROL_3,
-                Text = "Greutate",
+                Text = "Tip",
                 TextAlign = ContentAlignment.MiddleCenter,
                 Left = InformatiiField.Left,
-                Top = InformatiiField.Top + InformatiiField.Height + PADDING,
+                Top = InformatiiField.Top + InformatiiField.Height,
                 BackColor = Color.Gray
             };
 
             AreaField = new Label()
             {
                 Width = LATIME_CONTROL_3,
-                Text = "Greutate",
+                Text = "Arie",
                 TextAlign = ContentAlignment.MiddleCenter,
                 Left = TypeField.Left + TypeField.Width + PADDING,
-                Top = InformatiiField.Top + InformatiiField.Height + PADDING,
+                Top = InformatiiField.Top + InformatiiField.Height,
                 BackColor = Color.Gray
             };
 
             SoilField = new Label()
             {
                 Width = LATIME_CONTROL_3,
-                Text = "Greutate",
+                Text = "Tip Sol",
                 TextAlign = ContentAlignment.MiddleCenter,
                 Left = AreaField.Left + AreaField.Width + PADDING,
-                Top = InformatiiField.Top + InformatiiField.Height + PADDING,
+                Top = InformatiiField.Top + InformatiiField.Height,
                 BackColor = Color.Gray
             };
+
+            btnSubmitAnimal = new Button()
+            {
+                Text = "Adauga Animal",
+                Top = txtWeightAnimal.Top + txtWeightAnimal.Height + PADDING,
+                Width = txtWeightAnimal.Width + PADDING + inputWeightAnimal.Width,
+                Left = inputWeightAnimal.Left,
+            };
+
+            inputTypeField = new Label()
+            {
+                Width = LATIME_CONTROL,
+                Text = "Tip Camp",
+                TextAlign = ContentAlignment.MiddleCenter,
+                Left = DIMENSIUNE_PAS_WINDOW,
+                Top = btnSubmitAnimal.Top + btnSubmitAnimal.Height + PADDING,
+            };
+
+            inputAreaField = new Label()
+            {
+                Width = LATIME_CONTROL,
+                Text = "Arie Camp",
+                TextAlign = ContentAlignment.MiddleCenter,
+                Left = DIMENSIUNE_PAS_WINDOW,
+                Top = inputTypeField.Top + inputTypeField.Height + PADDING,
+            };
+
+            inputSoilField = new Label()
+            {
+                Width = LATIME_CONTROL,
+                Text = "Tip Camp",
+                TextAlign = ContentAlignment.MiddleCenter,
+                Left = DIMENSIUNE_PAS_WINDOW,
+                Top = inputAreaField.Top + PADDING + inputAreaField.Height,
+            };
+
+
+            txtTypeField = new ComboBox()
+            {
+                Width = LATIME_CONTROL,
+                Left = inputTypeField.Left + inputTypeField.Width + PADDING,
+                Top = inputTypeField.Top
+            };
+            txtTypeField.Items.Add("Alegeti...");
+            foreach (Enum value in Enum.GetValues(typeof(FieldType)))
+            {
+                txtTypeField.Items.Add(value);
+            }
+            txtTypeField.SelectedIndex = 0;
+
+            txtAreaField = new TextBox()
+            {
+                Width = LATIME_CONTROL,
+                Left = inputAreaField.Left + inputAreaField.Width + PADDING,
+                Top = inputAreaField.Top
+            };
+
+            txtSoilField = new ComboBox()
+            {
+                Width = LATIME_CONTROL,
+                Left = inputSoilField.Left + inputSoilField.Width + PADDING,
+                Top = inputSoilField.Top
+            };
+            txtSoilField.Items.Add("Alegeti...");
+            foreach (Enum value in Enum.GetValues(typeof(SoilType)))
+            {
+                txtSoilField.Items.Add(value);
+            }
+            txtSoilField.SelectedIndex = 0;
+
+
+
+
+            btnSubmitField = new Button()
+            {
+                Text = "Adauga Camp",
+                Top = inputSoilField.Top + inputSoilField.Height + PADDING,
+                Width = txtSoilField.Width + PADDING + inputSoilField.Width,
+                Left = inputSoilField.Left,
+            };
+
+            btnSubmitAnimal.Click += AdaugaAnimal;
+            btnSubmitAnimal.Click += LoadForm;
+
+            btnSubmitField.Click += AdaugaCamp;
+            btnSubmitField.Click += LoadForm;
+
+
+            errorInputTypeAnimal = new Label()
+            {
+                Text = "Eroare",
+                TextAlign = ContentAlignment.MiddleCenter,
+                Left = txtTypeAnimal.Left + txtTypeAnimal.Width,
+                Top = txtTypeAnimal.Top,
+                ForeColor = Color.Red
+            };
+            errorInputBreedAnimal = new Label()
+            {
+                Text = "Eroare",
+                TextAlign = ContentAlignment.MiddleCenter,
+                Left = txtBreedAnimal.Left + txtBreedAnimal.Width,
+                Top = txtBreedAnimal.Top,
+                ForeColor = Color.Red
+            };
+            errorInputAgeAnimal = new Label()
+            {
+                Text = "Eroare",
+                TextAlign = ContentAlignment.MiddleCenter,
+                Left = txtAgeAnimal.Left + txtAgeAnimal.Width,
+                Top = txtAgeAnimal.Top,
+                ForeColor = Color.Red
+            };
+            errorInputWeightAnimal = new Label()
+            {
+                Text = "Eroare",
+                TextAlign = ContentAlignment.MiddleCenter,
+                Left = txtWeightAnimal.Left + txtWeightAnimal.Width,
+                Top = txtWeightAnimal.Top,
+                ForeColor = Color.Red
+            };
+            errorInputTypeField = new Label()
+            {
+                Text = "Eroare",
+                TextAlign = ContentAlignment.MiddleCenter,
+                Left = txtTypeField.Left + txtTypeField.Width,
+                Top = txtTypeField.Top,
+                ForeColor = Color.Red
+            };
+            errorInputAreaField = new Label()
+            {
+                Text = "Eroare",
+                TextAlign = ContentAlignment.MiddleCenter,
+                Left = txtAreaField.Left + txtAreaField.Width,
+                Top = txtAreaField.Top,
+                ForeColor = Color.Red
+            };
+            errorInputSoilField = new Label()
+            {
+                Text = "Eroare",
+                TextAlign = ContentAlignment.MiddleCenter,
+                Left = txtSoilField.Left + txtSoilField.Width,
+                Top = txtSoilField.Top,
+                ForeColor = Color.Red
+            };
+
+
+
+
+
 
 
 
@@ -203,6 +494,25 @@ namespace GestionareFermaGUI
             this.Controls.Add(TypeField);
             this.Controls.Add(AreaField);
             this.Controls.Add(SoilField);
+            this.Controls.Add(inputTypeAnimal);
+            this.Controls.Add(inputBreedAnimal);
+            this.Controls.Add(inputAgeAnimal);
+            this.Controls.Add(inputWeightAnimal);
+            this.Controls.Add(txtTypeAnimal);
+            this.Controls.Add(txtBreedAnimal);
+            this.Controls.Add(txtAgeAnimal);
+            this.Controls.Add(txtWeightAnimal);
+            this.Controls.Add(inputTypeField);
+            this.Controls.Add(inputAreaField);
+            this.Controls.Add(inputSoilField);
+            this.Controls.Add(txtTypeField);
+            this.Controls.Add(txtAreaField);
+            this.Controls.Add(txtSoilField);
+
+            
+
+            this.Controls.Add(btnSubmitAnimal);
+            this.Controls.Add(btnSubmitField);
 
 
         }
@@ -211,6 +521,134 @@ namespace GestionareFermaGUI
         {
             AfiseazaInformatii();
         }
+
+        private void AdaugaAnimal(object sender, EventArgs e)
+        {
+            if (validareAnimal())
+            {
+                Animal animalNou = new Animal((FarmAnimalType)Enum.Parse(typeof(FarmAnimalType), txtTypeAnimal.Text), Convert.ToInt32(txtAgeAnimal.Text), Convert.ToDouble(txtWeightAnimal.Text), txtBreedAnimal.Text);
+                dataManagerAnimal.AddToFile(animalNou);
+            }
+            else
+            {
+
+            }
+
+        }
+
+        private void AdaugaCamp(object sender, EventArgs e)
+        {
+            if (validareCamp())
+            {
+                Field fieldNou = new Field((FieldType)Enum.Parse(typeof(FieldType), txtTypeField.Text), Convert.ToInt32(txtAreaField.Text), (SoilType)Enum.Parse(typeof(SoilType), txtSoilField.Text), Actions.None);
+                dataManagerField.AddToFile(fieldNou);
+            }
+
+
+        }
+
+        private bool validareAnimal()
+        {
+            int err = 0;
+            bool isOnlyNuberAge = Regex.IsMatch(txtAgeAnimal.Text, @"^\d+$");
+            bool isOnlyNuberWeigth = Regex.IsMatch(txtWeightAnimal.Text, @"^\d+$");
+
+            if (txtTypeAnimal.SelectedIndex == 0)
+            {
+                err++;
+                this.Controls.Add(errorInputTypeAnimal);
+            }
+            else
+            {
+                this.Controls.Remove(errorInputTypeAnimal);
+            }
+
+            if (!isOnlyNuberAge)
+            {
+                err++;
+                this.Controls.Add(errorInputAgeAnimal);
+            }
+            else
+            {
+                this.Controls.Remove(errorInputAgeAnimal);
+            }
+
+            if (!isOnlyNuberWeigth)
+            {
+                err++;
+                this.Controls.Add(errorInputWeightAnimal);
+            }
+            else
+            {
+                this.Controls.Remove(errorInputWeightAnimal);
+            }
+
+            if (txtBreedAnimal.Text.Length < 3 || string.IsNullOrEmpty(txtBreedAnimal.Text))
+            {
+                err++;
+                this.Controls.Add(errorInputBreedAnimal);
+            }
+            else
+            {
+                this.Controls.Remove(errorInputBreedAnimal);
+            }
+            if (err > 0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+            
+
+        }
+
+        private bool validareCamp()
+        {
+            int err = 0;
+            bool isOnlyNuberArea = Regex.IsMatch(txtAreaField.Text, @"^\d+$");
+
+            if (txtTypeField.SelectedIndex == 0)
+            {
+                err++;
+                this.Controls.Add(errorInputTypeField);
+            }
+            else
+            {
+                this.Controls.Remove(errorInputTypeField);
+            }
+
+            if (!isOnlyNuberArea)
+            {
+                err++;
+                this.Controls.Add(errorInputAreaField);
+            }
+            else
+            {
+                this.Controls.Remove(errorInputAreaField);
+            }
+
+            if (txtSoilField.SelectedIndex == 0)
+            {
+                err++;
+                this.Controls.Add(errorInputSoilField);
+            }
+            else
+            {
+                this.Controls.Remove(errorInputSoilField);
+            }
+            if (err > 0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+
 
         private void AfiseazaInformatii()
         {
@@ -233,7 +671,7 @@ namespace GestionareFermaGUI
                     Width = LATIME_CONTROL,
                     Text = Enum.GetName(typeof(FarmAnimalType), animal.Type),
                     TextAlign = ContentAlignment.MiddleCenter,
-                    Left = DIMENSIUNE_PAS_Y,
+                    Left = DIMENSIUNE_PAS_WINDOW2,
                     Top = (TypeAnimal.Top+TypeAnimal.Height)+PADDING*(i+1) 
                 };
                 lblsBreedAnimal[i] = new Label()

@@ -1,2 +1,4 @@
 Wheat$Clay$12$None
 Corn$Loam$12$None
+Wheat$Peat$123$None
+Barley$Sand$50$None

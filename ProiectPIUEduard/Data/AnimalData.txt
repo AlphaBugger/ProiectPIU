@@ -5,3 +5,6 @@ Horse$Thoroughbred$12$12
 Other$Other$12$12.2
 Other$$0$0
 Cow$Holstein$12$12
+Cow$Other$12$13
+Pig$Prost$123$3
+Cow$Terra$3$24

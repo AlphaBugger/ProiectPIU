@@ -240,6 +240,7 @@ namespace GestionareFerma
             }
         }
 
+
         static void DisplayFields()
         {
             Console.WriteLine("Afișare câmpuri:");

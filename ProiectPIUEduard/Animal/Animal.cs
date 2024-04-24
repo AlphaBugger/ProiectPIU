@@ -51,13 +51,9 @@ namespace AnimalClass
 
             //ordinea de preluare a campurilor este data de ordinea in care au fost scrise in fisier prin apelul implicit al metodei ConversieLaSir_PentruFisier()
             this.Type = (FarmAnimalType)Enum.Parse(typeof(FarmAnimalType), fileData[FileTYPE]);
-            Console.WriteLine(this.Type);
             this.Age = Convert.ToInt32(fileData[FileAGE]);
-            Console.WriteLine(this.Age);
             this.Weight = Convert.ToDouble(fileData[FileWEIGHT]);
-            Console.WriteLine(this.Weight);
             this.Breed = fileData[FileBREED];
-            Console.WriteLine(this.Breed);
 
         }
         public void DisplayAnimalInfo()
