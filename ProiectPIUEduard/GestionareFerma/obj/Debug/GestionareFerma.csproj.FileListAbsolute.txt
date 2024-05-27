@@ -16,10 +16,6 @@ C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFerma\obj\Debug\Gesti
 C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFerma\bin\Debug\GestionareFerma.exe.config
 C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFerma\bin\Debug\GestionareFerma.exe
 C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFerma\bin\Debug\GestionareFerma.pdb
-C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFerma\bin\Debug\Animal.dll
-C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFerma\bin\Debug\Field.dll
-C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFerma\bin\Debug\Animal.pdb
-C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFerma\bin\Debug\Field.pdb
 C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFerma\obj\Debug\Gestiona.E75E943B.Up2Date
 C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFerma\obj\Debug\GestionareFerma.exe
 C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFerma\obj\Debug\GestionareFerma.pdb
@@ -27,3 +23,5 @@ C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFerma\bin\Debug\FileS
 C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFerma\bin\Debug\Interfaces.dll
 C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFerma\bin\Debug\FileSaver.pdb
 C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFerma\bin\Debug\Interfaces.pdb
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFerma\bin\Debug\ClassLibrary.dll
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFerma\bin\Debug\ClassLibrary.pdb

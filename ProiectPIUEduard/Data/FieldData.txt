@@ -2,3 +2,6 @@ Wheat$Clay$12$None
 Corn$Loam$12$None
 Wheat$Peat$123$None
 Barley$Sand$50$None
+Wheat$Loam$122$None
+Corn$Sand$24$None
+Wheat$Sand$13$None

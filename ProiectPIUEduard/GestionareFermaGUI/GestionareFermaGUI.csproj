@@ -47,11 +47,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="AdaugaAnimalForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AdaugaAnimalForm.Designer.cs">
+      <DependentUpon>AdaugaAnimalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdaugaCampForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdaugaCampForm.Designer.cs">
+      <DependentUpon>AdaugaCampForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeAnimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeAnimal.Designer.cs">
+      <DependentUpon>ChangeAnimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeField.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeField.Designer.cs">
+      <DependentUpon>ChangeField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAnimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAnimal.Designer.cs">
+      <DependentUpon>ViewAnimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewFields.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewFields.Designer.cs">
+      <DependentUpon>ViewFields.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,13 +114,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Animal\AnimalClass.csproj">
-      <Project>{6ca828f1-15f6-4ccb-8ebf-a485d8bff9ec}</Project>
-      <Name>AnimalClass</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Field\FieldClass.csproj">
-      <Project>{b6f1d493-7c5f-4254-8e9d-14863a837a03}</Project>
-      <Name>FieldClass</Name>
+    <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj">
+      <Project>{04993997-df86-4f96-8ba6-2171286e94ef}</Project>
+      <Name>ClassLibrary</Name>
     </ProjectReference>
     <ProjectReference Include="..\FileSaver\FileSaver.csproj">
       <Project>{d1f0bc6d-227c-47c6-90ac-510581241fbc}</Project>

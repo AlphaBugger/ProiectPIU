@@ -1,6 +1,0 @@
-C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\Field\bin\Debug\Field.dll
-C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\Field\bin\Debug\Field.pdb
-C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\Field\obj\Debug\Field.csproj.AssemblyReference.cache
-C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\Field\obj\Debug\Field.csproj.CoreCompileInputs.cache
-C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\Field\obj\Debug\Field.dll
-C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\Field\obj\Debug\Field.pdb

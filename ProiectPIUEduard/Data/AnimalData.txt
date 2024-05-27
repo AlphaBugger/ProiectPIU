@@ -8,3 +8,8 @@ Cow$Holstein$12$12
 Cow$Other$12$13
 Pig$Prost$123$3
 Cow$Terra$3$24
+Sheep$Other$12$80
+Chicken$other$10$19
+Goat$other$10$100
+Cow$Holstein$12$14
+Horse$QuarterHorse$10$100

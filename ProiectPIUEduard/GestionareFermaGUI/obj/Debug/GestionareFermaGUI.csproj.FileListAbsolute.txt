@@ -1,12 +1,8 @@
 C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFermaGUI\bin\Debug\GestionareFermaGUI.exe.config
 C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFermaGUI\bin\Debug\GestionareFermaGUI.exe
 C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFermaGUI\bin\Debug\GestionareFermaGUI.pdb
-C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFermaGUI\bin\Debug\Animal.dll
-C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFermaGUI\bin\Debug\Field.dll
 C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFermaGUI\bin\Debug\FileSaver.dll
 C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFermaGUI\bin\Debug\Interfaces.dll
-C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFermaGUI\bin\Debug\Animal.pdb
-C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFermaGUI\bin\Debug\Field.pdb
 C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFermaGUI\bin\Debug\FileSaver.pdb
 C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFermaGUI\bin\Debug\Interfaces.pdb
 C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFermaGUI\obj\Debug\GestionareFermaGUI.csproj.AssemblyReference.cache
@@ -16,3 +12,5 @@ C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFermaGUI\obj\Debug\Ge
 C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFermaGUI\obj\Debug\Gestiona.89A7D080.Up2Date
 C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFermaGUI\obj\Debug\GestionareFermaGUI.exe
 C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFermaGUI\obj\Debug\GestionareFermaGUI.pdb
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFermaGUI\bin\Debug\ClassLibrary.dll
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\GestionareFermaGUI\bin\Debug\ClassLibrary.pdb

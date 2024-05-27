@@ -1,0 +1,9 @@
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\ClassLibrary\bin\Debug\ClassLibrary.dll
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\ClassLibrary\bin\Debug\ClassLibrary.pdb
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\ClassLibrary\bin\Debug\Interfaces.dll
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\ClassLibrary\bin\Debug\Interfaces.pdb
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\ClassLibrary\obj\Debug\ClassLibrary.csproj.AssemblyReference.cache
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\ClassLibrary\obj\Debug\ClassLib.939BCD28.Up2Date
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\ClassLibrary\obj\Debug\ClassLibrary.dll
+C:\Users\edi\Desktop\ProiectPIU\ProiectPIUEduard\ClassLibrary\obj\Debug\ClassLibrary.pdb

@@ -51,13 +51,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Animal\AnimalClass.csproj">
-      <Project>{6ca828f1-15f6-4ccb-8ebf-a485d8bff9ec}</Project>
-      <Name>AnimalClass</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Field\FieldClass.csproj">
-      <Project>{b6f1d493-7c5f-4254-8e9d-14863a837a03}</Project>
-      <Name>FieldClass</Name>
+    <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj">
+      <Project>{04993997-df86-4f96-8ba6-2171286e94ef}</Project>
+      <Name>ClassLibrary</Name>
     </ProjectReference>
     <ProjectReference Include="..\FileSaver\FileSaver.csproj">
       <Project>{d1f0bc6d-227c-47c6-90ac-510581241fbc}</Project>
